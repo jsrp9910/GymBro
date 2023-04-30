@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styleLoginPage.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <title>Login page</title>
+                        
+    </head>
+    <body>
+        <section class="container forms">
+
+            <div class="form signup">
+                <div class="form-content">
+                    <header id="signup">Create Account:</header>
+                    <form id="form" action="#">
+                        <div id="errors"></div>
+                        <div class="field input-field">
+                            <input id="name" type="firtName" placeholder="First Name" class="input" >
+                        </div>
+                        <div class="field input-field">
+                            <input id="lastName" type="lastName" placeholder="Last Name" class="input" >
+                        </div>
+                        <div class="field input-field">
+                            <input id="email" type="email" placeholder="Email" class="input" >
+                        </div>
+                        <div class="field input-field">
+                            <input id="password" type="password" placeholder="Create password" class="password">
+
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Confirm password" class="confirmPass" >
+                        </div>
+
+                        <div class="field button-field">
+                            <button type="submit">Signup</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- login Form -->
+
+            <div class="form login">
+                <div class="form-content">
+                    <header id="login">Welcome back</header>
+                    <form id="login-form" action="#">
+                        <div id="errors"></div>
+                        <div class="field input-field">
+                            <input id="loginEmail" type="email" placeholder="Email" class="input" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input id="loginPassword" type="password" placeholder="Password" class="password" required>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <button type="submit">Login</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link">Create account</a></span>
+                    </div>
+                  </div>
+
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+        <script src="/index.js"></script>
+    </body>
+</html>

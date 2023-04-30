@@ -1,0 +1,86 @@
+.navbar {
+  background-color: white;
+  border-radius: 20px;
+  z-index: 100;
+  width: 90%;
+  padding: 0px 100px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 20px;
+}
+
+.navbar-list ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-list ul li {
+  margin-left: 50px;
+}
+
+.navbar-list ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #404040;
+  font-weight: bold;
+  display: block;
+  transition: 0.4s ease-in-out;
+}
+
+.navbar-list ul li a:hover {
+  transition: 0.4s ease-in-out;
+  font-size: 16px;
+}
+
+.navbar-list ul li button {
+  background: linear-gradient(112.82deg, #828282 19.93%, #434343 102.22%);
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  text-transform: uppercase;
+}
+
+.navbar-list ul li button:hover {
+  transition: 0.4s ease;
+  font-size: 14px;
+}
+
+.scroll {
+  background: white;
+  top: -100px;
+  border-radius: 20px;
+  width: 90%;
+  animation: fadedown 0.4s ease 1s forwards;
+}
+
+@keyframes fadedown {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 20px;
+  }
+}
+
+.navbar-brand {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(112.82deg, #828282 19.93%, #434343 102.22%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;;
+  color: transparent;
+}

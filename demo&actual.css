@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1D212B;
+}
+
+.tablestyle {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    margin-top: 150px;
+}
+.tablestyle td {
+    border: 1px solid;
+    height: 380px;
+    width: 380px;
+    text-align: center;
+    background: #5c6886;
+    border-radius: 30px;
+}
+
+.user {
+    padding: 50px;
+}
+
+table h2 {
+    font-size: 30px;
+    transform: translate(0%,-150%);
+}
+
+table a {
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+table a:hover {
+    transition: 0.3s ease;
+    color: gray;
+}
+
+/*comments*/
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    border-radius:15px;
+    min-width: 250px;
+    position: relative;
+    min-height: 400px;
+    max-height: 510px;
+    transform: translate(0%,10%);
+}
+
+
+
+/*left*/
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+}
+#newtask input{
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #000000;
+}
+#newtask button{
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #7d7d7d;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+}
+
+/*right*/
+
+#newtask2{
+    position: relative;
+    padding: 30px 20px
+}
+
+#newtask2 input{
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+#newtask2 input:focus{
+    outline: none;
+    border-color: #000000;
+}
+
+#newtask2 button{
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #7d7d7d;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+}
+
+/*tasks*/
+#tasks{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    padding: 30px 20px;
+    margin-top: 10px;
+
+}
+
+#tasks2{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+
+.task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button{
+    background-color: #7d7d7d;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
+
+
+.task2{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+.task2 span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task2 button{
+    background-color: #7d7d7d;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 15rem;
+  }
+
+
+  .delete{
+    position:relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .delete:hover::before {
+    content: "X";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: #7d7d7d;
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .delete i{
+    color: #ff0000;
+    font-size: 20px;
+  }
+
+  /*right x */
+  .delete2{
+    position:relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .delete2:hover::before {
+    content: "X";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: #7d7d7d;
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .delete2 i{
+    color: #ff0000;
+    font-size: 20px;
+  }

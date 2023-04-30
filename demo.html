@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymnBro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="demo&actual.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="user">
+            <h2>*Demo*</h2>
+        </div>
+        <div class="navbar-brand">
+            <h1>GymBro</h1>
+        </div>
+        <div class="navbar-list">
+          <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><button id="subscription">Sign Up/Login</button></li>
+          </ul>
+        </div>
+      </nav>
+
+      <table columnspacing="100px" cellpadding="10" id="maintab" class="tablestyle">
+        <tr>
+            <td>
+                <h2>Recipe</h2>
+                <a href="https://www.myprotein.com/thezone/recipe/meal-prep-recipes-muscle-building-fat-loss/" style="display: block;" target=”_blank”>39 Meal Prep Recipes For Muscle Building & Fat Loss</a>
+                <a href="https://tasty.co/compilation/post-workout-recovery-meals" style="display: block;" target=”_blank”>Post-Workout Recovery Meals</a>
+                <a href="https://www.rei.com/learn/expert-advice/what-to-eat-after-a-workout.html" style="display: block;" target=”_blank”>Post-Workout Recipes for Optimal Recovery</a>
+            </td>
+            <td rowspan="2">
+                <h2>Workout Goals</h2>
+                <div class="container">
+                    <div id="newtask">
+                        <input type="text" placeholder="Add Tasks">
+                        <button id="click">Add</button>
+                    </div>
+                    <div id="tasks"></div>
+                </div>
+            </td>
+            <td rowspan="2">
+                <h2>Planner</h2>
+                <div class="container">
+                    <div id="newtask2">
+                        <input type="text" placeholder="Add Tasks">
+                        <button id="click2">Add</button>
+                    </div>
+                    <div id="tasks2"></div>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <h1 style="transform: translate(0, -65px)">BMI Calculator</h1>
+                    <div class="display">
+                        <p id="result" style="font-size: 30px;">--</p>
+                        <p id="category" style="font-size: 20px;">--</p>
+                    </div>
+                <div class="row">
+                    <input class="rs-range" type="range" min="20" max="200" value="20" id="weight" oninput="BMI()" style="width: 100%;">
+                    <span id="weight-val">20 kg</span>
+                </div>
+                <div class="row">
+                    <input type="range" min="100" max="250" value="100" id="height" oninput="BMI()" style="width: 100%;">
+                    <span id="height-val">100 cm</span>
+                </div>
+        
+        
+            </div>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Diet Plan</h2>
+                <a href="https://medmunch.com/obesity-diet-plan/" style="display: block;" target="_blank">Obesity Plan</a>
+                <a href="https://www.australianeggs.org.au/nutrition/meal-plans/weight-gain-meal-plan" style="display: block;" target="_blank">Underweight Plan</a>
+                <a href="https://store.bariatricpal.com/pages/3-daily-meal-plan-for-maintenance-1-week" style="display: block;" target="_blank">Normal Weight Plan</a>
+            </td>
+            <td>
+                <iframe
+                width="100%"
+                height="400px"
+                frameborder="0" 
+                referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBnGVq3hak67pJ1XeYFeD2WZ8cdhs2f-Ho&q=gyms+near+my+location"
+                allowfullscreen>
+                </iframe>
+            </td>
+        </tr>
+        <script src="index.js"></script>
+        <script type="text/javascript">
+            function BMI(){
+                var bmi;
+                var result = document.getElementById("result");
+            
+                var weight = parseInt(document.getElementById("weight").value);
+                document.getElementById("weight-val").textContent = weight + " kg";
+            
+                var height = parseInt(document.getElementById("height").value);
+                document.getElementById("height-val").textContent = height + " cm";
+            
+                bmi = (weight / Math.pow( (height/100), 2 )).toFixed(1);
+                result.textContent = bmi;
+            
+                if(bmi < 18.5){
+                    category = "Underweight";
+                    result.style.color = "gold";
+                }
+                else if( bmi >= 18.5 && bmi <= 24.9 ){
+                    category = "Normal Weight";
+                    result.style.color = "lightgreen";
+                }
+                else if( bmi >= 25 && bmi <= 29.9 ){
+                    category = "Overweight";
+                    result.style.color = "red";
+                }
+                else{
+                    category = "Obese";
+                    result.style.color = "darkred";
+                }
+                document.getElementById("category").textContent = category;
+            }
+                </script>
+          
+          <script src="map.js"></script>
+</body>
+</html>
